@@ -1,0 +1,6 @@
+#!/bin/bash
+git subtree pull --prefix=fake.git/ git@github.com:IIvexII/github-profile-clone.git gh-pages --squash
+git subtree pull --prefix=hotel/ git@github.com:IIvexII/hotelTemplate.git master --squash
+git subtree pull --prefix=season/ git@github.com:IIvexII/seasons-react-app.git gh-pages --squash
+git subtree pull --prefix=shoe.products/ git@github.com:IIvexII/product-landing-page.git main --squash
+

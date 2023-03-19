@@ -1,0 +1,345 @@
+/* Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Styling */
+body{
+    background-color: #1f1549;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+h1, h2, h3{
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Utilities */
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.text-primary{
+    color: #ecafc0;
+}
+
+.lead{
+    font-size: 20px;
+    margin: auto;
+}
+
+.btn{
+    /* line-height: 100px; */
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgba(59, 45, 116, 0.7);
+    padding: 15px 25px;
+    font-weight: bold;
+    border: none;
+    color: white;
+}
+    .btn:hover,
+    .btn:active{
+        color: #3b2d74;
+        background-color: white !important;
+    }
+
+.clr{
+    clear: both;
+}
+/* Dark Utilities */
+.bg-dark{
+    background-color: #0d052c;
+    color: white;
+}
+.bg-light{
+    background-color: #b3a2f6;
+    color: black;
+}
+.bg-primary{
+    background-color: #291a66;
+    color: white;
+}
+
+/* Main Header */
+#main-header{
+    overflow: auto;
+}
+
+    .main-header__brand{
+        margin: 0;
+        margin-top: 5px;
+        float: left;
+    }
+        .main-header__brand a:focus{
+            outline: none;
+        }
+        .main-header__brand img{
+            width: 55px;
+        }
+    .main-header__navbar{
+        float: right;
+    }
+
+        .navbar__items li{
+            list-style: none;
+            float: left;
+        }
+
+        .navbar__items li a{
+            font-size: 20px;
+            display: block;
+            padding: 23px;
+            text-decoration: none;
+        }
+            
+            .navbar__items li a:hover,
+            .active{
+                background-color: #3b2d74;
+                color: #ecafc0;
+            }
+
+/* Main Section */
+#showcase{
+    background: url("../img/showcase.jpg") no-repeat center center/cover;   
+    height: 450px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+    #showcase p{
+        max-width: 620px;
+    }
+
+#home-info{
+    height: 470px;
+    overflow: hidden;
+}
+
+    #home-info .info__img{
+        float: left;
+        background: url("../img/photo-1.jpg") no-repeat center center/cover;
+        width: 50%;
+        height: 100%;
+    }
+    #home-info .info{
+        text-align: center;
+        float: right;
+        width: 50%;
+        padding: 20px;
+        overflow: hidden;
+    }
+        .info__heading{
+            margin-top: 5%;
+        }
+        .info__paragraph{
+            padding: 5%;
+            max-width: 450px;
+            margin: auto;
+        }
+
+/* Features */
+.box{
+    float: left;
+    width: 33.3%;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.box img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+/* Contact us page */
+#contact-form{
+    padding-top: 30px;
+    background: url("../img/contaact-us-bg.jpg") center center/cover;
+    height:600px ;
+}
+#contact-form .container{
+    max-width: 500px;
+}
+#contact-form .contact-field{
+    margin-bottom: 20px;
+}
+#contact-form .contact-field label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#contact-form .contact-field input,
+#contact-form .contact-field textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+#contact-form .contact-field textarea{
+    height: 120px;
+}
+
+#contact-form .btn{
+    margin-bottom: 20px;
+    background-color: rgba(59, 45, 116, 0.6);
+}
+
+/* About */
+#about-info{
+    padding: 20px;
+}
+#about-info p{
+    float: left;
+    width: 50%;
+    line-height: 1.4rem;
+}
+#about-info img{
+    display: block;
+    float: right;
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#testimonial {
+    background: url("../img/test-bg.jpg") no-repeat center center/cover;
+    text-align: center;
+    padding: 30px 0 50px 0;
+    margin-top: 30px;
+}
+#testimonial .testimonial{
+    padding: 20px 0;
+}
+#testimonial h1{
+    padding-top: 100px;
+    font-size: 30px;
+}
+#testimonial .testimonial img{
+    width: 100px;
+    float: left;
+    border-radius: 50%;
+}
+#testimonial .testimonial p{
+    float: right;
+    width: 80%;
+    padding-top: 20px;
+    font-size: 19px;
+}
+/* Footer */
+.main-footer{
+    text-align: center;
+    padding: 20px;
+}
+
+/* For Tablets */
+@media only screen and (max-width:690px){
+    /* Showcase */
+    #showcase h1{
+        font-size: 40px;
+    }
+    #showcase p{
+        font-size: 18px;
+    }
+    /* Home Info */
+    #home-info .info{
+        padding: 10px;
+        padding-bottom: 0;
+    }
+    #home-info .info__heading{
+        font-size: 17px;
+    }
+    #home-info .info__paragraph{
+        font-size: 15px;
+    }
+    /* Feature */
+    .box h2{
+        font-size: 16px;
+    }
+    .box p{
+        font-size: 14px;
+    }
+    /* About Page */
+    #about-info h1{
+        font-size: 36px;
+    }
+    #about-info p{
+        width: 100%;
+        font-size: 20px;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+    #about-info img{
+        display:none;
+    }
+    #testimonial h1{
+        font-size: 40px;
+    }
+
+    #testimonial .testimonial img{
+        float: none;
+        display: block;
+        width: 120px;
+        margin: 0 auto;
+    }
+    #testimonial .testimonial p{
+        width: 100%;
+        font-size: 19px;
+    }
+}
+
+/* For Mobiles */
+@media only screen and (max-width:480px){
+    /* Navbar */
+    .navbar__items li a{
+        padding: 23px 10px;
+    }
+    /* Home Info */
+    #home-info{
+        height: auto;
+    }
+    #home-info .info{
+        padding: 5px;
+        width: 100%;
+    }
+    #home-info .info__img{
+        width: 100%;
+        height: 300px;
+       float: none; 
+    }
+    #home-info .info__heading{
+        font-size: 20px;
+    }
+    #home-info .info__paragraph{
+        width: 100%;
+        float: none;
+        font-size: 17px;
+        padding: 0;
+        text-align: center;
+        margin: auto;
+    }
+    /* Feature */
+    .box{
+        float: none;
+        width: 100%;
+    }
+    .box h2{
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    .box p{
+        max-width: 200px;
+        margin: auto;
+    }
+    /* About Page */
+    #testimonial h1{
+        font-size: 150%;
+    }    
+}
